@@ -22,6 +22,7 @@ p {
   display: inline-block;
   width: 50%;
   color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9375;
 }
 
 .cardContent {
@@ -32,9 +33,25 @@ p {
 }
 
 .btn {
-  width: 5rem;
-  margin: 1rem 0 0 0;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  width: 8rem;
+  margin: 1em;
+  padding: 0.8em 0.8em;
+  border-radius: 30px;
+  text-transform: capitalize;
+  position: relative;
+  right: 5%;
+  border: 0;
+}
+
+.btn1 {
+  color: hsl(31, 77%, 52%);
+}
+.btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
 }
 
 .container {
@@ -59,7 +76,7 @@ p {
 .sedanCard,
 .luxuryCard {
   width: 40%;
-  height: 20rem;
+  height: 22rem;
 }
 
 .icon {
