@@ -43,15 +43,39 @@ p {
   border: 0;
 }
 
-.btn1 {
+.btn a {
+  text-decoration: none;
+}
+
+.btn {
   color: hsl(31, 77%, 52%);
 }
+.btn1:hover {
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  background-color: hsl(31, 77%, 52%);
+}
+
 .btn2 {
   color: hsl(184, 100%, 22%);
 }
 
+.btn2:hover {
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  background-color: hsl(184, 100%, 22%);
+}
+
 .btn3 {
   color: hsl(179, 100%, 13%);
+}
+.btn3:hover {
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  background-color: hsl(179, 100%, 13%);
 }
 
 .container {
@@ -102,19 +126,15 @@ p {
   text-align: center;
   position: absolute;
   width: 100%;
-  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 636px) {
+@media screen and (max-width: 670px) {
   p {
     width: 55%;
   }
-}
-
-@media screen and (max-width: 572px) {
   .suvCard,
   .sedanCard,
   .luxuryCard {
