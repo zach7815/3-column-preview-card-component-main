@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* general styling */
+
 body,
 button {
   background-color: hsl(0, 0%, 95%);
@@ -25,12 +27,58 @@ p {
   font-size: 0.9375rem;
 }
 
+/* card styling */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.suvCard,
+.sedanCard,
+.luxuryCard {
+  width: 40%;
+  height: 22rem;
+}
+
 .cardContent {
   display: flex;
   flex-direction: column;
   position: relative;
   left: 30%;
 }
+.icon {
+  position: relative;
+  right: 13%;
+  margin: 2rem 0 0 0;
+}
+
+.sedanCard {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 5px 0 0;
+}
+
+.suvCard {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxuryCard {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 5px 5px;
+}
+
+/* button styling */
 
 .btn {
   width: 8rem;
@@ -43,13 +91,10 @@ p {
   border: 0;
 }
 
-.btn a {
-  text-decoration: none;
-}
-
 .btn {
   color: hsl(31, 77%, 52%);
 }
+
 .btn1:hover {
   color: hsl(0, 0%, 95%);
   border: 1px solid hsl(0, 0%, 95%);
@@ -78,49 +123,6 @@ p {
   background-color: hsl(179, 100%, 13%);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  margin: 4rem 0 2rem 0;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.suvCard,
-.sedanCard,
-.luxuryCard {
-  width: 40%;
-  height: 22rem;
-}
-
-.icon {
-  position: relative;
-  right: 13%;
-  margin: 2rem 0 0 0;
-}
-
-.sedanCard {
-  background-color: hsl(31, 77%, 52%);
-  border-radius: 5px 5px 0 0;
-}
-
-.suvCard {
-  background-color: hsl(184, 100%, 22%);
-}
-
-.luxuryCard {
-  background-color: hsl(179, 100%, 13%);
-  border-radius: 0 0 5px 5px;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -130,6 +132,8 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* media queries */
 
 @media screen and (max-width: 670px) {
   p {
